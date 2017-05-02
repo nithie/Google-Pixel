@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"></link>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <!-- Custom StyleSheet and Script File-->
     <link rel="stylesheet" type="text/css" href="/css/google_pixel.css">
     <script type="text/javascript" src="js/pixel.js"></script>
@@ -29,7 +31,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-default color">
+        <nav class="navbar navbar-default color navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" id="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -54,15 +56,62 @@
     </header>
     <div class="container-fluid" id="hero">
         <div class="row">
-            <div class="col-xs-4">
-                <div class="text-center hero-text">
+            <div class="col-md-8 col-md-push-4" id="right">
+                <div class="hero-image img-responsive animated fadeInDown" data-wow-duration="5s" data-wow-delay="5s"> <img srcset="/images/hero-1024.png 1024w,/images/hero-1024.png 720w" sizes="50vw,200vw" src="images/hero-1024.png" alt="silver-pixel"> </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8">
+                <div class="text-center hero-text" id="left">
                     <h2>Pixel.</h2>
-                    <p>Meet Pixel.</p>
-                    <p>By Google.</p>
+                    <p>Meet Pixel. Phone by Google.</p>
                 </div>
             </div>
-            <div class="col-xs-8">
-                <div class="hero-image animated fadeInDown" data-wow-duration="2s" data-wow-delay="5s"> <img src="/images/her0-1024.png" alt="silver-pixel"> </div>
+        </div>
+    </div>
+    <div class="container" id="videos">
+        <video loop autoplay>
+            <source src="images/pixel-video.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="container-fluid" id="assist">
+        <div class="row">
+            <div class="col-md-6 col-md-push-6"> <img class="img-responsive" src="/images/assist.gif" alt="assist"> </div>
+            <div class="col-md-6 col-md-pull-6 assit-text">
+                <h2>The first phone with the Google Assistant built in.</h2>
+                <p><i class="fa fa-search" aria-hidden="true"></i>Get answers</p>
+                <p><i class="fa fa-tasks" aria-hidden="true"></i>Manage every tasks </p>
+                <p><i class="fa fa-photo" aria-hidden="true"></i>Fond Photo Viewer</p>
+                <p><i class="fa fa-asterisk" aria-hidden="true"></i>Translate on the go</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="experience">
+        <div class="row">
+            <h2 class="text-center">An experience made by Google</h2>
+            <div class="col-md-6 text-experience-left">
+                <h3><i class="fa fa-mobile" aria-hidden="true"></i>Seamless glass-aluminium body</h3>
+                <p>With smooth surfaces and easy-to-grip curved edges.</p>
+                <h3><i class="fa fa-key" aria-hidden="true"></i>Vivid, cinematic display</h3>
+                <p>A brilliant AMOLED screen,with true blacks and 16.7million colors.</p>
+            </div>
+            <div class="col-md-6 text-experience-right">
+                <h3>Unlock quickly with Pixel Imprint<i class="fa fa-eye" aria-hidden="true"></i></h3>
+                <p>Unlock your phone quickly, and swipe down on the fingerprint sensor for quick access to all your notifications.</p>
+                <h3>The battery lasts all day and charges quickly.<i class="fa fa-battery" aria-hidden="true"></i></h3>
+                <p>Get upto 7 hours battery in 15mins.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="colors">
+        <h2 class="text-center">Two Sizes.Two Colors</h2>
+        <div id="phone-colors" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#phone-colors" data-slide-to="0" class="active"></li>
+                <li data-target="#phone-colors" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner cars">
+                <div class="item active center-block"> <img data-src="/images/carousel-1440.png" data-srcset="/images/carousel-720.png,/images/carousel-1440.png" data-sizes="auto" alt="black"> </div>
+                <div class="item center-block"> <img data-src="/images/carousel-1440w.png" data-srcset="/images/carousel-720w.png,/images/carousel-1440w.png" data-sizes="auto" alt="white"> </div>
             </div>
         </div>
     </div>
