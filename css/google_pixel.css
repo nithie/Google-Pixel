@@ -1,0 +1,63 @@
+svg {
+    height: 3vw;
+    width: 3vw;
+    margin: 1vw;
+}
+
+@media only screen and (max-width: 500px) {
+    svg {
+        height: 13vw;
+        width: 14vw;
+        padding: 0.25vw;
+        margin-top: 2%;
+        margin-right: 5%;
+    }
+    #button {
+        margin: 3%;
+        margin-top: 5%;
+    }
+}
+
+.color {
+    background-color: white;
+    border: 0px;
+}
+
+#myNavbar>ul {
+    margin-left: 5%;
+}
+
+#myNavbar>ul>li>a {
+    padding: 1.5em;
+    padding-top: 2em;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+#myNavbar>ul>li>a:hover {
+    color: black;
+}
+
+.actives {
+    border: 0px;
+    border-bottom: 2px solid blue;
+}
+
+#hero {
+    background-color: lightgray;
+}
+
+.hero-text {
+    padding: 5em;
+    padding-left: 7em;
+    text-align: left;
+    font-size: 28px;
+}
+
+.hero-text>h2 {
+    font-size: 35px;
+}
+
+.hero-image {
+    padding-left: 15em;
+}
