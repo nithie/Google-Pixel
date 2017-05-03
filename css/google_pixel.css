@@ -42,14 +42,13 @@ svg {
     border-bottom: 2px solid blue;
 }
 
+
+/*--------------- End ofNavbar Section---------------------*/
+
 #hero {
     background-color: lightgray;
     padding: 0px;
-}
-
-.hero-text {
-    text-align: left;
-    font-size: 28px;
+    margin-top: 2%;
 }
 
 .hero-text>h2 {
@@ -60,31 +59,29 @@ svg {
 }
 
 .hero-text>p {
-    padding-left: 5.5em;
+    padding-left: 4em;
     font-size: 25px;
     color: black;
 }
 
 .hero-image {
-    padding: 3em 15em;
+    padding: 3em 20em;
 }
 
-#hero>div>div {
-    padding: 0px;
-}
+
+/*-------------End of hero Section--------------*/
 
 video {
     width: 100%;
     height: 100%;
+    margin-top: 3%;
 }
 
-#videos {
-    margin-top: 5%;
-}
+
+/*--------------End of video section--------------*/
 
 #assist {
-    margin: 3%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #sm-features {
@@ -92,15 +89,14 @@ video {
 }
 
 .assit-text {
-    padding-left: 3em;
+    padding-left: 12em;
     text-align: left;
     color: #d3d3d3;
-    word-spacing: 3px;
+    word-spacing: 2px;
 }
 
 .assit-text>h2 {
     line-height: 1.25em;
-    padding-right: 4em;
     font-size: 40px;
 }
 
@@ -114,12 +110,15 @@ video {
     padding-right: 1em;
 }
 
+
+/*------------------End of assist section-----------*/
+
 #sm-experience {
-    padding-top: 2em;
     display: none;
 }
 
 #experience {
+    margin-top: 3%;
     background-color: black;
     color: white;
     padding-top: 5em;
@@ -151,33 +150,44 @@ video {
     padding-right: 2em;
 }
 
+
+/*------------End of Experience section-----------*/
+
 #colors>h2 {
     color: #d3d3d3;
     font-size: 40px;
-    margin-top: 4em;
+    margin-top: 5%;
 }
 
-.cars {
+.carousel-background {
     background-color: white;
 }
 
-.cars>div {
-    padding: 0px;
-    padding-left: 15%;
+.carousel-background>div {
+    margin: 0;
+    padding: 0% 7.5%;
 }
+
+
+/*------------End of Carousel Section--------------*/
 
 #switch>.row {
     margin-top: 5%;
 }
 
 .connect>h2 {
-    margin: -0.5%;
+    margin-bottom: 1%;
 }
 
-.parent {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: auto;
+.gif {
+    width: 40%;
+    height: 40%;
+    margin-left: 35%;
+    margin-top: 3%;
+}
+
+.icon-padding {
+    padding-right: 1em;
 }
 
 .heading {
@@ -191,6 +201,9 @@ video {
 #where_to_buy>div>div {
     margin-top: 3%;
 }
+
+
+/*---------End of where to buy section---------*/
 
 #more {
     background-color: black;
@@ -209,6 +222,9 @@ video {
     font-size: 20px;
     padding-left: 0.5em;
 }
+
+
+/*-----------End of Learn more section-------------*/
 
 #stayintouch {
     margin: 5%;
@@ -231,6 +247,9 @@ video {
     border-bottom: 1px solid darkgray;
 }
 
+
+/*---------------End of Stay in touch section---------- */
+
 footer {
     border-top: 1px solid red;
 }
@@ -243,6 +262,9 @@ footer>div>a {
     padding: 1em;
     display: inline-block;
 }
+
+
+/*-----------------End of footer section----------------*/
 
 @media only screen and (max-width: 500px) {
     svg {
@@ -257,6 +279,7 @@ footer>div>a {
         margin: 3%;
         margin-top: 5%;
     }
+    /*End of navbar*/
     .hero-text {
         margin-top: auto;
         text-align: left;
@@ -276,6 +299,7 @@ footer>div>a {
         padding: 0em 10em;
         padding-left: 10.50em;
     }
+    /*End of hero section*/
     .icon-padding {
         padding: 0;
         padding-right: 0.25em;
@@ -306,6 +330,7 @@ footer>div>a {
     .assit-text>p>i {
         padding-right: 0.5em;
     }
+    /*End of features section*/
     #experience {
         display: none;
     }
@@ -320,17 +345,20 @@ footer>div>a {
         width: 100%;
         text-align: center;
     }
+    /*End od experience section*/
     #colors>h2 {
         margin-top: 1.5em;
     }
-    .cars>div {
+    .carousel-background>div {
         padding: 0px;
         padding-left: 0%;
     }
+    /*End of carousel section*/
     .connect>h2 {
         margin: 2%;
         margin-top: 10%;
     }
+    /*end ofswitch section*/
     .icons {
         font-size: 15px;
         padding: 0.5em;
