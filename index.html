@@ -2,24 +2,25 @@
 <html lang="en">
 
 <head>
-    <title>First WebSite</title>
+    <title>Pixel</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Website using 960-GridSystem">
-    <meta name="keyword" content="Nithyaprasanth,Pasupathy,Full stack developer">
+    <meta name="description" content="Google Pixe">
+    <meta name="keyword" content="Pixel,Google,Phone by Google,Made by google">
     <meta name="author" content="Nithyaprasanth Pasupathy">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <!--google fonts-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom StyleSheet and Script File-->
     <link rel="stylesheet" type="text/css" href="/css/google_pixel.css">
     <script type="text/javascript" src="js/pixel.js"></script>
@@ -57,7 +58,7 @@
     <div class="container-fluid" id="hero">
         <div class="row">
             <div class="col-md-8 col-md-push-4" id="right">
-                <div class="hero-image img-responsive animated fadeInDown" data-wow-duration="5s" data-wow-delay="5s"> <img srcset="/images/hero-1024.png 1024w,/images/hero-1024.png 720w" sizes="50vw,200vw" src="images/hero-1024.png" alt="silver-pixel"> </div>
+                <div class="hero-image img-responsive animated fadeInDown" data-wow-duration="5s" data-wow-delay="5s"> <img srcset="/images/hero-1024.png 1024w,/images/hero-1024.png 720w" sizes="50vw,100vw" src="images/hero-1024.png" alt="silver-pixel"> </div>
             </div>
             <div class="col-md-4 col-md-pull-8">
                 <div class="text-center hero-text" id="left">
@@ -67,39 +68,74 @@
             </div>
         </div>
     </div>
-    <div class="container" id="videos">
+    <div class="container-fluid" id="videos">
         <video loop autoplay>
             <source src="images/pixel-video.mp4" type="video/mp4"> </video>
     </div>
     <div class="container-fluid" id="assist">
         <div class="row">
             <div class="col-md-6 col-md-push-6"> <img class="img-responsive" src="/images/assist.gif" alt="assist"> </div>
-            <div class="col-md-6 col-md-pull-6 assit-text">
+            <div class="col-md-6 col-md-pull-6 assit-text" id="lg-features">
                 <h2>The first phone with the Google Assistant built in.</h2>
-                <p><i class="fa fa-search" aria-hidden="true"></i>Get answers</p>
-                <p><i class="fa fa-tasks" aria-hidden="true"></i>Manage every tasks </p>
-                <p><i class="fa fa-photo" aria-hidden="true"></i>Fond Photo Viewer</p>
-                <p><i class="fa fa-asterisk" aria-hidden="true"></i>Translate on the go</p>
+                <p class="text-primary"><i class="fa fa-search" aria-hidden="true"></i>Get answers</p>
+                <p class="text-primary"><i class="fa fa-tasks" aria-hidden="true"></i>Manage every tasks </p>
+                <p class="text-primary"><i class="fa fa-photo" aria-hidden="true"></i>Fond Photo Viewer</p>
+                <p class="text-primary"><i class="fa fa-asterisk" aria-hidden="true"></i>Translate on the go</p>
+            </div>
+            <div class="col-md-6 col-md-pull-6 assit-text" id="sm-features">
+                <h2>The first phone with the Google Assistant built in.</h2>
+                <div id="features" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#features" data-slide-to="0" class="active"></li>
+                        <li data-target="#features" data-slide-to="1"></li>
+                        <li data-target="#features" data-slide-to="2"></li>
+                        <li data-target="#features" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <p class="text-primary"><i class="fa fa-search icon-padding" aria-hidden="true"></i>Get answers</p>
+                        </div>
+                        <div class="item">
+                            <p class="text-primary"><i class="fa fa-tasks icon-padding" aria-hidden="true"></i>Manage every tasks </p>
+                        </div>
+                        <div class="item">
+                            <p class="text-primary"><i class="fa fa-photo icon-padding" aria-hidden="true"></i>Fond Photo Viewer</p>
+                        </div>
+                        <div class="item">
+                            <p class="text-primary"><i class="fa fa-asterisk icon-padding" aria-hidden="true"></i>Translate on the go</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid" id="experience">
         <div class="row">
             <h2 class="text-center">An experience made by Google</h2>
-            <div class="col-md-6 text-experience-left">
-                <h3><i class="fa fa-mobile" aria-hidden="true"></i>Seamless glass-aluminium body</h3>
-                <p>With smooth surfaces and easy-to-grip curved edges.</p>
-                <h3><i class="fa fa-key" aria-hidden="true"></i>Vivid, cinematic display</h3>
+            <div class="col-md-6 text-experience-left" id="2x-experience1">
+                <h2><i class="fa fa-mobile" aria-hidden="true"></i>Seamless glass-aluminium body</h2>
+                <p>With mdooth surfaces and easy-to-grip curved edges.</p>
+                <h2><i class="fa fa-key" aria-hidden="true"></i>Vivid, cinematic display</h2>
                 <p>A brilliant AMOLED screen,with true blacks and 16.7million colors.</p>
             </div>
             <div class="col-md-6 text-experience-right">
-                <h3>Unlock quickly with Pixel Imprint<i class="fa fa-eye" aria-hidden="true"></i></h3>
-                <p>Unlock your phone quickly, and swipe down on the fingerprint sensor for quick access to all your notifications.</p>
-                <h3>The battery lasts all day and charges quickly.<i class="fa fa-battery" aria-hidden="true"></i></h3>
+                <h2>Unlock quickly with Pixel Imprint<i class="fa fa-eye" aria-hidden="true"></i></h2>
+                <p> swipe down on the fingerprint sensor for quick access.</p>
+                <h2>The battery lasts all day and charges quickly.<i class="fa fa-battery" aria-hidden="true"></i></h2>
                 <p>Get upto 7 hours battery in 15mins.</p>
             </div>
         </div>
     </div>
+    <div class="col-md-6" id="sm-experience">
+        <div class="fa fa-mobile icon" aria-hidden="true"></div>
+        <h2 class="text-center">Seamless glass-aluminium body</h2>
+        <div class="fa fa-key icon" aria-hidden="true"></div>
+        <h2 class="text-center">Vivid, cinematic display</h2>
+        <div class="fa fa-eye icon" aria-hidden="true"></div>
+        <h2 class="text-center">Unlock quickly with Pixel Imprint</h2>
+        <div class="fa fa-battery icon" aria-hidden="true"></div>
+        <h2 class="text-center">The battery lasts all day.</h2> </div>
     <div class="container-fluid" id="colors">
         <h2 class="text-center">Two Sizes.Two Colors</h2>
         <div id="phone-colors" class="carousel slide" data-ride="carousel">
@@ -110,9 +146,71 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner cars">
-                <div class="item active center-block"> <img data-src="/images/carousel-1440.png" data-srcset="/images/carousel-720.png,/images/carousel-1440.png" data-sizes="auto" alt="black"> </div>
-                <div class="item center-block"> <img data-src="/images/carousel-1440w.png" data-srcset="/images/carousel-720w.png,/images/carousel-1440w.png" data-sizes="auto" alt="white"> </div>
+                <div class="item active center-block"> <img src="/images/carousel-1440.png" alt="black"> </div>
+                <div class="item center-block"> <img src="/images/carousel-1440w.png" alt="white"> </div>
             </div>
         </div>
     </div>
+    <section class="container-fluid" id="switch">
+        <h2 class="text-center">Switch.</h2>
+        <div class="row">
+            <div class="col-md-6"> <img class="img-responsive parent" src="/images/connect-en_IN.gif" alt="gif"> </div>
+            <div class="col-md-6 connect">
+                <h2 class="text-center heading">It’s easier than  ever to switch.</h2>
+                <h4 class="text-left"><img src="images/usb-symbol.png">
+                Connect </h4>
+                <p class="text-center">Connect your old iPhone® or Android device to your new Pixel with the Quick Switch Adapter.</p>
+                <p class="text-left"><i><img src="images/signin.png"></i>&nbsp;Sign in</p>
+                <p class="text-left"><img src="images/transfer.png">&nbsp;Transfer </p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="where_to_buy">
+        <h2 class="text-center">Where to buy</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-default"><img src="images/flipkart.png" class="img-responsive center-block" alt="flipkart"></button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-default"><img src="images/croma.png" class="img-responsive center-block" alt="croma"></button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-default"><img src="images/ezone.png" class="img-responsive center-block" alt="ezone"></button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-default"><img src="images/hotspot.png" class="img-responsive center-block" alt="hotspot"></button>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid" id="more">
+        <div class="row">
+            <div class="col-md-4 padding">
+                <div class="fa fa-reorder icon" aria-hidden="true"></div>
+                <h3 class="text-center">Tech Specs</h3>
+                <p class="text-center">Get to know pixel.Inside and out.</p>
+                <p class="text-center text-primary">Learn More<i class="fa fa-arrow-right icons" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-md-4 padding">
+                <div class="fa fa-mobile icon" aria-hidden="true"></div>
+                <h3 class="text-center">Switching</h3>
+                <p class="text-center">See how easy to switch.</p>
+                <p class="text-center  text-primary">Learn More<i class="fa fa-arrow-right icons" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-md-4 padding">
+                <div class="fa fa-question-circle-o icon" aria-hidden="true"></div>
+                <h3 class="text-center ">Care by google</h3>
+                <p class="text-center">Get help from google expert.</p>
+                <p class="text-center text-primary">Learn More<i class="fa fa-arrow-right icons" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid" id="stayintouch">
+        <h2 class="text-center">Stay in the Know</h2>
+        <p class="text-center">Keep me updated about devices, news and tips from Google. </p>
+        <input type="email" class="center-block" placeholder="Enter your email address">
+        <div class="fa fa-arrow-right icon text-primary" aria-hidden="true"></div>
+    </section>
+    <footer class="container-fluid">
+        <div class="col-md-12"> <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a> </div>
+    </footer>
 </body>
