@@ -24,9 +24,6 @@
     <!-- Custom StyleSheet and Script File-->
     <link rel="stylesheet" type="text/css" href="/css/google_pixel.css">
     <script type="text/javascript" src="js/pixel.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </head>
 <!--End of Head -->
 
@@ -41,90 +38,92 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="actives"><a href="#">Overview</a></li>
-                        <li><a href="#">Tech Specs</a></li>
-                        <li><a href="#">Switch</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li class="actives animated fadeInDown"><a href="#" class="text-muted">Overview</a></li>
+                        <li class="animated fadeInDown"><a href="#">Tech Specs</a></li>
+                        <li class="animated fadeInDown"><a href="#">Switch</a></li>
+                        <li class="animated fadeInDown"><a href="#">Support</a></li>
                     </ul>
+                    <button type="button" class="btn btn-info btn-sm animated fadeInDown" data-toggle="modal" data-target="#buynowmodal">Buy Now</button>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Chromecast</a></li>
-                        <li><a href="#">Buy Now</a></li>
+                        <li class="animated fadeInDown"><a href="#">Chromecast</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--End of Nav bar-->
     </header>
-    <div class="container-fluid" id="hero">
+    <div class="container-fluid jumbotron" id="hero">
         <div class="row">
             <div class="col-md-8 col-md-push-4" id="right">
-                <div class="hero-image img-responsive animated fadeInDown" data-wow-duration="5s" data-wow-delay="5s"> <img srcset="/images/hero-1024.png 1024w,/images/hero-1024.png 720w" sizes="50vw,200vw" src="images/hero-1024.png" alt="silver-pixel"> </div>
+                <!--  <div class="hero-image img-responsive animated fadeInDown" data-wow-duration="5s" data-wow-delay="5s"> <img srcset="/images/hero-720.png 1024w,/images/hero-720.png 720w" sizes=auto src="images/hero-720.png" alt="silver-pixel"></div>-->
+                <div class="hero-image img-responsive animated fadeInDown"><img class="img-responsive" src="images/hero-720.png" alt="silver-pixel"></div>
             </div>
             <div class="col-md-4 col-md-pull-8">
                 <div class="text-center hero-text" id="left">
-                    <h2>Pixel.</h2>
-                    <p>Meet Pixel. Phone by Google.</p>
+                    <h2 class="text-left text-danger">Pixel.</h2>
+                    <p class="text-left text-warning">Meet Pixel.</p>
+                    <p class="text-left text-primary">Phone by Google.</p>
                 </div>
             </div>
         </div>
     </div>
     <!--End of hero section-->
-    <div class="container-fluid " id="videos ">
+    <div class="container-fluid" id="videos">
         <video loop autoplay>
-            <source src="images/pixel-video.mp4 " type="video/mp4 "> </video>
+            <source src="images/pixel-video.mp4" type="video/mp4"> </video>
     </div>
     <!--End of video section-->
-    <div class="container-fluid " id="assist">
+    <div class="container-fluid jumbotron" id="assist">
         <div class="row ">
             <div class="col-md-6 col-md-push-6"> <img class="img-responsive " src="/images/assist.gif " alt="assist "> </div>
-            <div class="col-md-6 col-md-pull-6 assit-text" id="lg-features ">
+            <div class="col-md-6 col-md-pull-6 assit-text" id="lg-features">
                 <h2>The first phone with the Google Assistant built in.</h2>
-                <p class="text-primary "><i class="fa fa-search " aria-hidden="true "></i>Get answers</p>
-                <p class="text-primary "><i class="fa fa-tasks " aria-hidden="true "></i>Manage every tasks </p>
-                <p class="text-primary "><i class="fa fa-photo " aria-hidden="true "></i>Fond Photo Viewer</p>
-                <p class="text-primary "><i class="fa fa-asterisk " aria-hidden="true "></i>Translate on the go</p>
+                <p class="text-primary"><i class="fa fa-search" aria-hidden="true"></i>Get answers</p>
+                <p class="text-primary"><i class="fa fa-tasks" aria-hidden="true"></i>Manage every tasks </p>
+                <p class="text-primary"><i class="fa fa-photo" aria-hidden="true"></i>Fond Photo Viewer</p>
+                <p class="text-primary"><i class="fa fa-asterisk" aria-hidden="true"></i>Translate on the go</p>
             </div>
         </div>
     </div>
     <!--Below contents will be hidden on large screens-->
-    <div class="col-md-6 col-md-pull-6 assit-text" id="sm-features ">
-        <h2>The first phone with the Google Assistant built in.</h2>
-        <div id="features " class="carousel slide " data-ride="carousel ">
-            <ol class="carousel-indicators ">
-                <li data-target="#features " data-slide-to="0 " class="active "></li>
-                <li data-target="#features " data-slide-to="1 "></li>
-                <li data-target="#features " data-slide-to="2 "></li>
-                <li data-target="#features " data-slide-to="3 "></li>
+    <div class="col-md-6 col-md-pull-6" id="sm-features">
+        <h2 class="text-muted">The first phone with the Google Assistant built in.</h2>
+        <div id="features" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#features" data-slide-to="0" class="active "></li>
+                <li data-target="#features" data-slide-to="1"></li>
+                <li data-target="#features" data-slide-to="2"></li>
+                <li data-target="#features" data-slide-to="3"></li>
             </ol>
-            <div class="carousel-inner ">
-                <div class="item active ">
-                    <p class="text-primary "><i class="fa fa-search icon-padding " aria-hidden="true "></i>Get answers</p>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <p class="text-primary text-center"><i class="fa fa-search icon-padding " aria-hidden="true"></i>Get answers</p>
+                </div>
+                <div class="item">
+                    <p class="text-primary text-center"><i class="fa fa-tasks icon-padding " aria-hidden="true"></i>Manage every tasks </p>
                 </div>
                 <div class="item ">
-                    <p class="text-primary "><i class="fa fa-tasks icon-padding " aria-hidden="true "></i>Manage every tasks </p>
+                    <p class="text-primary text-center"><i class="fa fa-photo icon-padding " aria-hidden="true"></i>Fond Photo Viewer</p>
                 </div>
-                <div class="item ">
-                    <p class="text-primary "><i class="fa fa-photo icon-padding " aria-hidden="true "></i>Fond Photo Viewer</p>
-                </div>
-                <div class="item ">
-                    <p class="text-primary "><i class="fa fa-asterisk icon-padding " aria-hidden="true "></i>Translate on the go</p>
+                <div class="item">
+                    <p class="text-primary text-center"><i class="fa fa-asterisk icon-padding " aria-hidden="true"></i>Translate on the go</p>
                 </div>
             </div>
         </div>
     </div>
     <section class="container-fluid" id="experience">
-        <div class="row ">
+        <div class="row">
             <h2 class=" col-md-12 text-center">An experience made by Google</h2>
             <div class="col-md-6 text-experience-left">
-                <h2><i class="fa fa-mobile " aria-hidden="true "></i>Seamless glass-aluminium body</h2>
+                <h2><i class="fa fa-mobile" aria-hidden="true"></i>Seamless glass-aluminium body</h2>
                 <p>With mdooth surfaces and easy-to-grip curved edges.</p>
-                <h2><i class="fa fa-key " aria-hidden="true "></i>Vivid, cinematic display</h2>
+                <h2><i class="fa fa-key" aria-hidden="true"></i>Vivid, cinematic display</h2>
                 <p>A brilliant AMOLED screen,with true blacks and 16.7million colors.</p>
             </div>
             <div class="col-md-6 text-experience-right">
-                <h2>Unlock quickly with Pixel Imprint<i class="fa fa-eye " aria-hidden="true "></i></h2>
+                <h2>Unlock quickly with Pixel Imprint<i class="fa fa-eye" aria-hidden="true"></i></h2>
                 <p> swipe down on the fingerprint sensor for quick access.</p>
-                <h2>The battery lasts all day and charges quickly.<i class="fa fa-battery " aria-hidden="true "></i></h2>
+                <h2>The battery lasts all day and charges quickly.<i class="fa fa-battery" aria-hidden="true"></i></h2>
                 <p>Get upto 7 hours battery in 15mins.</p>
             </div>
         </div>
@@ -139,8 +138,8 @@
         <div class="fa fa-battery icon" aria-hidden="true"></div>
         <h2 class="text-center">The battery lasts all day.</h2> </div>
     <!--End of experience section-->
-    <div class="container-fluid" id="colors">
-        <h2 class="text-center">Two Sizes.Two Colors</h2>
+    <div class="container-fluid jumbotron" id="colors">
+        <h2 class="text-center text-muted">Two Sizes.Two Colors</h2>
         <div id="phone-colors" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -149,8 +148,10 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-background">
-                <div class="item active center-block"> <img src="/images/carousel-1440.png" alt="black"> </div>
-                <div class="item center-block"> <img src="/images/carousel-1440w.png" alt="white"> </div>
+                <div class="item active center-block"> <img src="/images/carousel-1440.png" alt="black">
+                    <h3 class="text-center text-info">Quite Black</h3> </div>
+                <div class="item center-block"> <img src="/images/carousel-1440w.png" alt="white">
+                    <h3 class="text-center text-info">Very Silver</h3> </div>
             </div>
         </div>
     </div>
@@ -160,29 +161,21 @@
             <div class="col-md-6"> <img class="img-responsive gif" src="/images/connect-en_IN.gif" alt="gif"> </div>
             <div class="col-md-6 connect">
                 <h2 class="text-center heading">It’s easier than  ever to switch.</h2>
-                <h4 class="text-left"><img src="images/usb-symbol.png">
+                <h4 class="text-left"><img src="images/usb-symbol.png" alt="usb">
                 Connect </h4>
                 <p class="text-center">Connect your old iPhone® or Android device to your new Pixel with the Quick Switch Adapter.</p>
-                <p class="text-left"><i class="icon-padding"><img src="images/signin.png"></i>Sign in</p>
-                <p class="text-left"><i class="icon-padding"><img src="images/transfer.png"></i>Transfer </p>
+                <p class="text-left"><i class="icon-padding"><img src="images/signin.png" alt="siginin"></i>Sign in</p>
+                <p class="text-left"><i class="icon-padding"><img src="images/transfer.png" alt="trsansfer"></i>Transfer </p>
             </div>
         </div>
     </section>
-    <section class="container-fluid" id="where_to_buy">
+    <section class="container-fluid jumbotron" id="where_to_buy">
         <h2 class="text-center">Where to buy</h2>
         <div class="row">
-            <div class="col-md-3">
-                <button class="btn btn-default"><img src="images/flipkart.png" class="img-responsive center-block" alt="flipkart"></button>
-            </div>
-            <div class="col-md-3">
-                <button class="btn btn-default"><img src="images/croma.png" class="img-responsive center-block" alt="croma"></button>
-            </div>
-            <div class="col-md-3">
-                <button class="btn btn-default"><img src="images/ezone.png" class="img-responsive center-block" alt="ezone"></button>
-            </div>
-            <div class="col-md-3">
-                <button class="btn btn-default"><img src="images/hotspot.png" class="img-responsive center-block" alt="hotspot"></button>
-            </div>
+            <div class="col-md-3"> <img src="images/flipkart.png" class="img-responsive center-block" alt="flipkart"> </div>
+            <div class="col-md-3"> <img src="images/croma.png" class="img-responsive center-block" alt="croma"> </div>
+            <div class="col-md-3"> <img src="images/ezone.png" class="img-responsive center-block" alt="ezone"> </div>
+            <div class="col-md-3"> <img src="images/hotspot.png" class="img-responsive center-block" alt="hotspot"> </div>
         </div>
     </section>
     <div class="container-fluid" id="more">
@@ -191,7 +184,7 @@
                 <div class="fa fa-reorder icon" aria-hidden="true"></div>
                 <h3 class="text-center">Tech Specs</h3>
                 <p class="text-center">Get to know pixel.Inside and out.</p>
-                <p class="text-center text-primary">Learn More<i class="fa fa-arrow-right icons" aria-hidden="true "></i></p>
+                <p class="text-center text-primary">Learn More<i class="fa fa-arrow-right icons" aria-hidden="true"></i></p>
             </div>
             <div class="col-md-4 padding">
                 <div class="fa fa-mobile icon" aria-hidden="true"></div>
@@ -207,13 +200,33 @@
             </div>
         </div>
     </div>
-    <section class="container-fluid" id="stayintouch">
+    <section class="container-fluid jumbotron" id="stayintouch">
         <h2 class="text-center">Stay in the Know</h2>
         <p class="text-center">Keep me updated about devices, news and tips from Google. </p>
         <input type="email" class="center-block " placeholder="Enter your email address ">
-        <div class="fa fa-arrow-right icon text-primary" aria-hidden="true "></div>
+        <div class="fa fa-arrow-right icon text-primary" aria-hidden="true"></div>
     </section>
     <footer class="container-fluid">
         <div class="col-md-12"> <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> <a href="# "><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a> </div>
     </footer>
+    <div id="buynowmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Modal Header</h4> </div>-->
+                <div class="modal-body">
+                    <div class="col-md-3"> <img src="images/flipkart.png" class="img-responsive center-block" alt="flipkart"> </div>
+                    <div class="col-md-3"> <img src="images/croma.png" class="img-responsive center-block" alt="croma"> </div>
+                    <div class="col-md-3"> <img src="images/ezone.png" class="img-responsive center-block" alt="ezone"> </div>
+                    <div class="col-md-3"> <img src="images/hotspot.png" class="img-responsive center-block" alt="hotspot"> </div>
+                </div>
+                <div class="modal-footer" style="margin-top:10%">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+</html>

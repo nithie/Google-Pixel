@@ -13,7 +13,8 @@ header {
 svg {
     height: 4em;
     width: 4em;
-    margin: 1em;
+    margin: 0.1em;
+    margin-top: 0.5em;
 }
 
 .color {
@@ -30,7 +31,14 @@ svg {
     padding: 1.5em;
     padding-top: 2em;
     font-size: 14px;
-    color: #d3d3d3;
+    /* color: #c2c2a3;*/
+}
+
+#myNavbar>button {
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 1em;
+    float: right;
 }
 
 #myNavbar>ul>li>a:hover {
@@ -46,22 +54,23 @@ svg {
 /*--------------- End ofNavbar Section---------------------*/
 
 #hero {
-    background-color: lightgray;
+    /*background-color: #f9f9f9;*/
     padding: 0px;
     margin-top: 2%;
 }
 
 .hero-text>h2 {
-    padding: 7em 8em;
+    padding-top: 6em;
+    padding-left: 3.5em;
+    padding-right: 15em;
     padding-bottom: 0em;
     font-size: 35px;
-    color: black;
 }
 
 .hero-text>p {
-    padding-left: 4em;
+    padding-left: 5em;
+    padding-right: 6em;
     font-size: 25px;
-    color: black;
 }
 
 .hero-image {
@@ -86,6 +95,10 @@ video {
 
 #sm-features {
     display: none;
+}
+
+#buynowmodal>.modal-content {
+    z-index: 100;
 }
 
 .assit-text {
@@ -154,13 +167,12 @@ video {
 /*------------End of Experience section-----------*/
 
 #colors>h2 {
-    color: #d3d3d3;
     font-size: 40px;
     margin-top: 5%;
 }
 
 .carousel-background {
-    background-color: white;
+    border-radius: 10px;
 }
 
 .carousel-background>div {
@@ -194,8 +206,13 @@ video {
     color: gray;
 }
 
+#where_to_buy {
+    margin: 0px;
+    margin-top: 2%;
+}
+
 #where_to_buy>h2 {
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 #where_to_buy>div>div {
@@ -208,8 +225,8 @@ video {
 #more {
     background-color: black;
     color: white;
-    padding: 3em;
-    margin: 5%;
+    padding: 5%;
+    margin: 0;
 }
 
 .icon {
@@ -227,7 +244,7 @@ video {
 /*-----------End of Learn more section-------------*/
 
 #stayintouch {
-    margin: 5%;
+    margin: 0;
     padding-bottom: 3em;
 }
 
@@ -251,6 +268,7 @@ video {
 /*---------------End of Stay in touch section---------- */
 
 footer {
+    background-color: black;
     border-top: 1px solid red;
 }
 
@@ -275,29 +293,26 @@ footer>div>a {
         margin-bottom: 0px;
         margin-right: 5vw;
     }
-    #button {
-        margin: 3%;
+    #myNavbar>button {
+        margin-left: 5%;
         margin-top: 5%;
     }
     /*End of navbar*/
-    .hero-text {
-        margin-top: auto;
-        text-align: left;
-        font-size: 28px;
-    }
     .hero-text>h2 {
-        padding: 0em 0em;
+        text-align: center;
+        padding: 0em;
         font-size: 35px;
-        padding-left: 4.55em;
     }
     .hero-text>p {
-        padding: 0.15em 0.05em;
-        padding-left: 2em;
+        padding: 0em;
+        text-align: center;
+        font-size: 25px;
     }
     .hero-image {
         margin-top: 16%;
-        padding: 0em 10em;
-        padding-left: 10.50em;
+        padding: 0em 1em;
+        padding-left: 7em;
+        padding-bottom: 0px;
     }
     /*End of hero section*/
     .icon-padding {
@@ -311,24 +326,6 @@ footer>div>a {
     #sm-features {
         display: block;
         margin-top: 10px;
-        text-align: center;
-    }
-    .assit-text>h2 {
-        border-top: 0.1em solid lightgrey;
-        color: black;
-        font-size: 25px;
-        line-height: 1.5em;
-        padding-top: 1em;
-        padding-left: 0.001em;
-        padding-right: 0.01em;
-    }
-    .assit-text>p {
-        font-size: 20px;
-        padding-top: 2em;
-        color: dimgray;
-    }
-    .assit-text>p>i {
-        padding-right: 0.5em;
     }
     /*End of features section*/
     #experience {
@@ -338,7 +335,8 @@ footer>div>a {
         display: block;
         background-color: black;
         color: white;
-        padding-bottom: 3em;
+        margin-top: 1em;
+        padding-bottom: 3em 0em;
     }
     .icon {
         font-size: 40px;
